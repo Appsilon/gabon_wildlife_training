@@ -1,0 +1,9 @@
+# ignore neptune config
+config/neptune.ini
+
+# ignore models
+*.pth
+*.pkl
+
+# Mac specific
+.DS_Store
