@@ -36,17 +36,17 @@ overfitting, but beginning is decent.
    * acc =  0.75
 
 10. stage1a - (from scratch) rescaled images, 5epochs frozen autumn-bee-16 (wysypało się po 3epokach) radiant-star-18 training_11_rescaled_wandb_full.ipynb
-   * val_loss = 1.01
-   * acc =  0.72
+    * val_loss = 1.01
+    * acc =  0.72
 
 11. stage2a - (from model in 10.) rescaled images, 5epochs unfrozen [noble-water-21](https://app.wandb.ai/jedrzej/gabon/runs/19wnwr2w) (best model after 3) training_12_rescaled_wandb_full.ipynb
-   * val_loss = 0.85
-   * acc = 0.77
+    * val_loss = 0.85
+    * acc = 0.77
 
 12. stage3a - (from model in 11.) full images, but 1,5x of rescaled in each dim (so 576x~768), 5epochs frozen sweet-potato-flan-25 (broke after 3 epochs) training_13_wandb_full_from_scratch_bigger_images.ipynb
-   * val_loss = 0.84
-   * acc = 0.77
+    * val_loss = 0.84
+    * acc = 0.77
 
 13. stage4a - (from model in 12.) full images, but 1,5x of rescaled in each dim (so 576x~768), 5epochs unfrozen [fluent-brook-27](https://app.wandb.ai/jedrzej/gabon/runs/yhcil4dn) (broke after 4 epochs) training_14_wandb_full_from_scratch_bigger_images.ipynb (best model: stage4a-intermediate_bestmodel.pth)
-   * val_loss = 0.72
-   * acc = 0.80
+    * val_loss = 0.72
+    * acc = 0.80
