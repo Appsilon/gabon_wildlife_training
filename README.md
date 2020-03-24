@@ -4,8 +4,7 @@ This repo contains records of the modelling phase of the Gabon Wildlife MVP proj
 * the best trained model
 * the best trained model using only rescaled (~384x512) images
 * the train/test split used for training train_valid_df.csv
-* csv with all data (???)
-* all exif data collected so far
+* [all exif datetimes collected so far](https://github.com/Appsilon/gabon_wildlife_training/tree/master/data_dive/datetimes_exif)
 * the images of disks with full data and rescaled data
 * [notes on training runs with links to Weights&Biases](https://github.com/Appsilon/gabon_wildlife_training/blob/master/notes_on_training_runs.md)
 * csv with raw labels from Robbie Whytock
