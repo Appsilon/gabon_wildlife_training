@@ -39,7 +39,7 @@ overfitting, but beginning is decent.
    * val_loss = 1.01
    * acc =  0.72
 
-11. stage2a - (from model in 10.) rescaled images, 5epochs unfrozen noble-water-21 (best model after 3) training_12_rescaled_wandb_full.ipynb
+11. stage2a - (from model in 10.) rescaled images, 5epochs unfrozen [noble-water-21](https://app.wandb.ai/jedrzej/gabon/runs/19wnwr2w) (best model after 3) training_12_rescaled_wandb_full.ipynb
    * val_loss = 0.85
    * acc = 0.77
 
