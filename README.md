@@ -13,8 +13,12 @@ This repo contains records of the modelling phase of the Gabon Wildlife MVP proj
 # Key findings
 1. images come in sequences (e.g., 30 images long), one can identify them using algorithmic methods or with datetimes
 2. images come from many sources with varying species distributions
-3. images have varying sizes, from 1088x816 to 3264x2448
+3. images have varying sizes, from 1088x816 to 3264x2448 and proportions, form 1.25 to 1.78
 4. had issues with Neptune reporting (on/off of callbacks) - switched to Weights&Biases
+5. training worked best when training on 384x512 -> 576x768 images (starting lower seemed to overfit quickly, probably due to sequence redundancy)
+6. best model has **accuracy 80%**, top2_accuracy = 88.97%, top3_accuracy = 92.15%
+7. accuracies vary significantly per source and per species
+8. grad-CAM suggests the right parts of images are used for inference
 
 # Process description and contents
 
@@ -42,3 +46,18 @@ This repo contains records of the modelling phase of the Gabon Wildlife MVP proj
 * accuracy of best model on rescaled validation set is 76% (training_15-check_4a_on_rescaled.ipynb)
 
 ## inspect_model
+* top2 and top3 accuracies of best model (inspect_model_02.ipynb)
+* accuracies per species vary significantly (inspect_model_02.ipynb)
+* accuracies per source vary significantly (Compressed Camera Trap Images > Camera trap Nki National Park > allData) (inspect_model_02.ipynb)
+* plots of confusion matrices for a subset of data (e.g., per source) (inspect_model_03.ipynb)
+* use grad-CAM ideas to insepct areas of images used for making predictions (inspect_model_4a...)
+
+# Ideas for future improvements
+* use Megadetector to detect animal, then classify it
+* possibly ensamble the above model with the current one
+* remove Blank and use sigmoid activation full argument starts from 45:00 of https://course.fast.ai/videos/?lesson=10
+* rescale all the data - not just current train+valid (in case useful)
+* use .to_fp16() (reduce precision to speed up and help generalization)
+* use ResNeXt architecture
+* investigate day vs night performance of models (bare in mind some day images are B&W)
+* investigate label quality - are Bird and Rail_Nkulengu disjoint? Are Monkey and Mandrillus disjoint? Are primates classified correctly? Are the 650 Rat_Giant in allData/StephBrittainZSL really there?
