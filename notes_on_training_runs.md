@@ -47,6 +47,6 @@ overfitting, but beginning is decent.
    * val_loss = 0.84
    * acc = 0.77
 
-13. stage4a - (from model in 12.) full images, but 1,5x of rescaled in each dim (so 576x~768), 5epochs unfrozen fluent-brook-27 (broke after 4 epochs) training_14_wandb_full_from_scratch_bigger_images.ipynb (best model: stage4a-intermediate_bestmodel.pth)
+13. stage4a - (from model in 12.) full images, but 1,5x of rescaled in each dim (so 576x~768), 5epochs unfrozen [fluent-brook-27](https://app.wandb.ai/jedrzej/gabon/runs/yhcil4dn) (broke after 4 epochs) training_14_wandb_full_from_scratch_bigger_images.ipynb (best model: stage4a-intermediate_bestmodel.pth)
    * val_loss = 0.72
    * acc = 0.80
