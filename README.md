@@ -7,7 +7,7 @@ This repo contains records of the modelling phase of the Gabon Wildlife MVP proj
 * csv with all data (???)
 * all exif data collected so far
 * the images of disks with full data and rescaled data
-* notes on training runs with links to Weights&Biases
+* [notes on training runs with links to Weights&Biases](https://github.com/Appsilon/gabon_wildlife_training/blob/master/notes_on_training_runs.md)
 * csv with raw labels from Robbie Whytock
 
 # Key findings
@@ -34,9 +34,11 @@ This repo contains records of the modelling phase of the Gabon Wildlife MVP proj
 
 ## training
 * started with reporting in Neptune, but due to issues with callbacks, turned to Weights&Biases
-* notes on training runs with links can be found here
+* [notes on training runs with links can be found here](https://github.com/Appsilon/gabon_wildlife_training/blob/master/notes_on_training_runs.md)
 * functions used during training are in functions_wandb.py and functions_wandb_no_rescale.py (depending on the data used)
-
-
+* best model was trained first on 384x512 images (stage1a and stage2a - training_13_wandb_full_from_scratch_bigger_images.ipynb) next on 576x768 images (stage3a and stage4a - training_14_wandb_full_from_scratch_bigger_images.ipynb)
+* **best model has accuracy of 80%**
+* confusion matrix for best model with grouped species (conf_m-new_order-stage4a-5epochs-576_768-rescaled.png)
+* accuracy of best model on rescaled validation set is 76% (training_15-check_4a_on_rescaled.ipynb)
 
 ## inspect_model
