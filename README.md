@@ -4,7 +4,7 @@ This repo contains records of the modelling phase of the Gabon Wildlife MVP proj
 * [the best trained model](https://github.com/Appsilon/gabon_wildlife_training/releases/tag/v1.0-model)
 * [the train/test split used for training train_valid_df.csv](https://github.com/Appsilon/gabon_wildlife_training/releases/tag/v1.0-train_valid_df)
 * [all exif datetimes collected so far](https://github.com/Appsilon/gabon_wildlife_training/tree/master/data_dive/datetimes_exif)
-* the snapshots of disks with [full data](https://console.cloud.google.com/compute/snapshotsDetail/projects/wildlifeexplorer/global/snapshots/snapshot-wildlife-explorer-data?project=wildlifeexplorer) and [rescaled data](https://console.cloud.google.com/compute/snapshotsDetail/projects/wildlifeexplorer/global/snapshots/snapshot-wildlife-explorer-data-rescaled?project=wildlifeexplorer) (restricted access
+* the snapshots of disks with [full data](https://console.cloud.google.com/compute/snapshotsDetail/projects/wildlifeexplorer/global/snapshots/snapshot-wildlife-explorer-data?project=wildlifeexplorer) and [rescaled data](https://console.cloud.google.com/compute/snapshotsDetail/projects/wildlifeexplorer/global/snapshots/snapshot-wildlife-explorer-data-rescaled?project=wildlifeexplorer) (restricted access)
 * [notes on training runs with links to Weights&Biases](https://github.com/Appsilon/gabon_wildlife_training/blob/master/notes_on_training_runs.md)
 * [csv with raw labels from Robbie Whytock](https://github.com/Appsilon/gabon_wildlife_training/releases/tag/v1.0-raw_csv)
 
@@ -48,7 +48,7 @@ This repo contains records of the modelling phase of the Gabon Wildlife MVP proj
 * accuracies per species vary significantly (inspect_model_02.ipynb)
 * accuracies per source vary significantly (Compressed Camera Trap Images > Camera trap Nki National Park > allData) (inspect_model_02.ipynb)
 * plots of confusion matrices for a subset of data (e.g., per source) (inspect_model_03.ipynb)
-* use grad-CAM ideas to insepct areas of images used for making predictions (inspect_model_4a...)
+* use grad-CAM ideas to inspect areas of images used for making predictions (inspect_model_4a...)
 
 # Ideas for future improvements
 * use Megadetector to detect animal, then classify it
