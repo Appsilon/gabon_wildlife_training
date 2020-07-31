@@ -7,3 +7,6 @@ config/neptune.ini
 
 # Mac specific
 .DS_Store
+
+# specific local files
+df_w_valid.csv
