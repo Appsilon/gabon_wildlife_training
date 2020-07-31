@@ -55,7 +55,7 @@ This repo contains records of the modelling phase of the Gabon Wildlife MVP proj
 * added some extra chimp and gorilla images, removed some mislabels (train_valid_df_200722.csv contains the new data list)
 * retrained the model with to_fp16()
 * tried EfficientNet but training was super slow, so stuck to ResNet50
-* improved on chimps and gorillas noticeably, however, overall the accuracy was slightly lower
+* improved on chimps and gorillas noticeably, however, overall the accuracy was slightly lower ([release with model](https://github.com/Appsilon/gabon_wildlife_training/releases/tag/v1.0-model-extra-data))
 
 # Ideas for future improvements
 * use Megadetector to detect animal, then classify it
