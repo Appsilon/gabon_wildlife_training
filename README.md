@@ -17,6 +17,7 @@ This repo contains records of the modelling phase of the Gabon Wildlife MVP proj
 6. best model has **accuracy 80%**, top2_accuracy = 88.97%, top3_accuracy = 92.15%
 7. accuracies vary significantly per source and per species
 8. grad-CAM suggests the right parts of images are used for inference
+9. extra data on gorillas and chimps plus removing some mislabels, helped accuracy on gorillas and chimps, but overall the accuracy stayed similar
 
 # Process description and contents
 
@@ -50,12 +51,18 @@ This repo contains records of the modelling phase of the Gabon Wildlife MVP proj
 * plots of confusion matrices for a subset of data (e.g., per source) (inspect_model_03.ipynb)
 * use grad-CAM ideas to inspect areas of images used for making predictions (inspect_model_4a...)
 
+## extra_data
+* added some extra chimp and gorilla images, removed some mislabels (train_valid_df_200722.csv contains the new data list)
+* retrained the model with to_fp16()
+* tried EfficientNet but training was super slow, so stuck to ResNet50
+* improved on chimps and gorillas noticeably, however, overall the accuracy was slightly lower
+
 # Ideas for future improvements
 * use Megadetector to detect animal, then classify it
 * possibly ensamble the above model with the current one
 * remove Blank and use sigmoid activation full argument starts from 45:00 of https://course.fast.ai/videos/?lesson=10
 * rescale all the data - not just current train+valid (in case useful)
-* use .to_fp16() (reduce precision to speed up and help generalization)
+* ~~use .to_fp16() (reduce precision to speed up and help generalization)~~
 * use ResNeXt architecture
 * investigate day vs night performance of models (bare in mind some day images are B&W)
 * investigate label quality - are Bird and Rail_Nkulengu disjoint? Are Monkey and Mandrillus disjoint? Are primates classified correctly? Are the 650 Rat_Giant in allData/StephBrittainZSL really there?
