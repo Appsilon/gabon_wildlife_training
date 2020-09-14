@@ -1,4 +1,4 @@
-This repo contains records of the modelling phase of the Gabon Wildlife MVP project - the model is used in the MVP of Mbaza AI.
+This repo contains records of the modelling phase of the Gabon Wildlife MVP project - the model is used in Mbaza AI desktop application ([link to repository](https://github.com/Appsilon/wildlife-explorer)).
 
 # Links to key artifacts
 * [the best trained model](https://github.com/Appsilon/gabon_wildlife_training/releases/tag/v1.0-model)
